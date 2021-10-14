@@ -20,16 +20,17 @@ class Form extends React.Component {
 
     return (
       <div>
-        <h2>Adicionar nova carta</h2>
         <form>
+          <h2>Adicionar nova carta</h2>
+
           <label htmlFor="name">
             Nome
             <input
               type="text"
               name="name"
               value={ cardName }
-              onChange={ onInputchange }
               data-testid="name-input"
+              onChange={ onInputchange }
             />
           </label>
 
@@ -38,8 +39,8 @@ class Form extends React.Component {
             <textarea
               name="description"
               value={ cardDescription }
-              onChange={ onInputchange }
               data-testid="description-input"
+              onChange={ onInputchange }
             />
           </label>
 
@@ -49,8 +50,8 @@ class Form extends React.Component {
               type="number"
               name="att1"
               value={ cardAttr1 }
-              onChange={ onInputchange }
               data-testid="attr1-input"
+              onChange={ onInputchange }
             />
           </label>
 
@@ -60,8 +61,8 @@ class Form extends React.Component {
               type="number"
               name="att2"
               value={ cardAttr2 }
-              onChange={ onInputchange }
               data-testid="attr2-input"
+              onChange={ onInputchange }
             />
           </label>
 
@@ -71,8 +72,8 @@ class Form extends React.Component {
               type="number"
               name="att3"
               value={ cardAttr3 }
-              onChange={ onInputchange }
               data-testid="attr3-input"
+              onChange={ onInputchange }
             />
           </label>
 
@@ -82,8 +83,8 @@ class Form extends React.Component {
               type="text"
               name="image"
               value={ cardImage }
-              onChange={ onInputchange }
               data-testid="image-input"
+              onChange={ onInputchange }
             />
           </label>
 
@@ -92,8 +93,8 @@ class Form extends React.Component {
             <select
               name="name"
               value={ cardRare }
-              onChange={ onInputchange }
               data-testid="rare-input"
+              onChange={ onInputchange }
             >
               <option value="normal">normal</option>
               <option value="raro">raro</option>
@@ -105,18 +106,18 @@ class Form extends React.Component {
             Super Trunfo
             <input
               type="checkbox"
-              checked={ cardTrunfo }
-              onChange={ onInputchange }
               name="trunfo"
+              checked={ cardTrunfo }
               data-testid="trunfo-input"
+              onChange={ onInputchange }
             />
           </label>
 
           <button
-            type="submit"
+            type="button"
+            data-testid="save-button"
             disabled={ isSaveButtonDisabled }
             onClick={ onSaveButtonClick }
-            data-testid="save-button"
           >
             Salvar
           </button>
