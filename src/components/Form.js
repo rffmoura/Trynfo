@@ -20,7 +20,7 @@ class Form extends React.Component {
 
     return (
       <div>
-        <form>
+        <form className="form">
           <h2>Adicionar nova carta</h2>
 
           <label htmlFor="name">
@@ -44,33 +44,33 @@ class Form extends React.Component {
             />
           </label>
 
-          <label htmlFor="att1">
+          <label htmlFor="attr1">
             Atributo 1
             <input
               type="number"
-              name="att1"
+              name="attr1"
               value={ cardAttr1 }
               data-testid="attr1-input"
               onChange={ onInputChange }
             />
           </label>
 
-          <label htmlFor="att2">
+          <label htmlFor="attr2">
             Atributo 2
             <input
               type="number"
-              name="att2"
+              name="attr2"
               value={ cardAttr2 }
               data-testid="attr2-input"
               onChange={ onInputChange }
             />
           </label>
 
-          <label htmlFor="att3">
+          <label htmlFor="attr3">
             Atributo 3
             <input
               type="number"
-              name="att3"
+              name="attr3"
               value={ cardAttr3 }
               data-testid="attr3-input"
               onChange={ onInputChange }
